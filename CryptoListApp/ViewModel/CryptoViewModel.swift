@@ -9,7 +9,9 @@ import Foundation
 
 struct CryptoListviewModel {
     let cryptoCurrencyList : [CryptoCurrency]
-    
+}
+
+extension CryptoListviewModel {
     func numberOfRowsInSection() -> Int {
         self.cryptoCurrencyList.count
     }
@@ -18,7 +20,6 @@ struct CryptoListviewModel {
         let crypto = self.cryptoCurrencyList[index]
         return CryptoViewModel(cryptoCurrency: crypto)
     }
-    
 }
 
 struct CryptoViewModel {
