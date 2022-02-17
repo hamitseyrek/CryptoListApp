@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04150322AA8E8AE317E540E5 /* Pods_CryptoListApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF1B28C2266A3BC22EB19A8 /* Pods_CryptoListApp.framework */; };
 		5E54CB4B27B8DCBF006E035E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54CB4A27B8DCBF006E035E /* AppDelegate.swift */; };
 		5E54CB4D27B8DCBF006E035E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54CB4C27B8DCBF006E035E /* SceneDelegate.swift */; };
 		5E54CB4F27B8DCBF006E035E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54CB4E27B8DCBF006E035E /* ViewController.swift */; };
@@ -32,6 +33,9 @@
 		5E54CB6427B94833006E035E /* CryptoCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrency.swift; sourceTree = "<group>"; };
 		5E54CB6627B94934006E035E /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		5E54CB6827B95401006E035E /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
+		6CF1B28C2266A3BC22EB19A8 /* Pods_CryptoListApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoListApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF41822EFC2F99B1D5BC77C4 /* Pods-CryptoListApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoListApp.release.xcconfig"; path = "Target Support Files/Pods-CryptoListApp/Pods-CryptoListApp.release.xcconfig"; sourceTree = "<group>"; };
+		B1A5ACD947CB4625B302F156 /* Pods-CryptoListApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoListApp.debug.xcconfig"; path = "Target Support Files/Pods-CryptoListApp/Pods-CryptoListApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04150322AA8E8AE317E540E5 /* Pods_CryptoListApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5695E18B04259B502419F08A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CF1B28C2266A3BC22EB19A8 /* Pods_CryptoListApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5E54CB3E27B8DCBF006E035E = {
 			isa = PBXGroup;
 			children = (
 				5E54CB4927B8DCBF006E035E /* CryptoListApp */,
 				5E54CB4827B8DCBF006E035E /* Products */,
+				8A57E283130E8C2B5577CC8D /* Pods */,
+				5695E18B04259B502419F08A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +126,16 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		8A57E283130E8C2B5577CC8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1A5ACD947CB4625B302F156 /* Pods-CryptoListApp.debug.xcconfig */,
+				AF41822EFC2F99B1D5BC77C4 /* Pods-CryptoListApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E54CB5B27B8DCC1006E035E /* Build configuration list for PBXNativeTarget "CryptoListApp" */;
 			buildPhases = (
+				F0587AD44FDA3B6BDFC35D82 /* [CP] Check Pods Manifest.lock */,
 				5E54CB4327B8DCBF006E035E /* Sources */,
 				5E54CB4427B8DCBF006E035E /* Frameworks */,
 				5E54CB4527B8DCBF006E035E /* Resources */,
+				E5557FC4E41E86C9938CD556 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,6 +203,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E5557FC4E41E86C9938CD556 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoListApp/Pods-CryptoListApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoListApp/Pods-CryptoListApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CryptoListApp/Pods-CryptoListApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0587AD44FDA3B6BDFC35D82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoListApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5E54CB4327B8DCBF006E035E /* Sources */ = {
@@ -332,6 +401,7 @@
 		};
 		5E54CB5C27B8DCC1006E035E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1A5ACD947CB4625B302F156 /* Pods-CryptoListApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -360,6 +430,7 @@
 		};
 		5E54CB5D27B8DCC1006E035E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF41822EFC2F99B1D5BC77C4 /* Pods-CryptoListApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
